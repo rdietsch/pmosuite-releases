@@ -14,6 +14,14 @@ https://raw.githubusercontent.com/rdietsch/pmosuite-releases/main/stable/manifes
 Trust comes from the **Ed25519 signature**, not from this repository. Every instance
 has the public key built in and ignores any manifest whose signature does not verify.
 
+## Signing key
+
+`release-signing.pub` (Ed25519). SHA-256 fingerprint of the DER form:
+`6a109aca37517eb9da8002c91e68085f8a85090695e35089d68b8e6302f58c4e`
+
+Check it with `openssl pkey -pubin -in release-signing.pub -outform DER | openssl dgst -sha256`.
+Instances embed this key at build time and never download it from here.
+
 ## Layout
 
 ```
