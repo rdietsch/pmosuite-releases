@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "channel": "stable",
+  "modules": [
+    {
+      "id": "estimator",
+      "version": "1.9.7",
+      "images": {
+        "api": "ghcr.io/rdietsch/pmosuite-estimator-api@sha256:5b4d55a745bb6b6661318085a64e00c075397cb01682811610857f3c9b047b81",
+        "web": "ghcr.io/rdietsch/pmosuite-estimator-web@sha256:8a90d777046db8173c1a83d2d78a354535e4236d52672f346952833d45438906"
+      },
+      "requires": {},
+      "min_upgrade_from": "1.9.6",
+      "migrations": {
+        "alembic_head": "c9d1e2f3a4b7"
+      },
+      "severity": "feature",
+      "changelog": "changelogs/estimator/1.9.7.md"
+    }
+  ],
+  "released_at": "2026-11-24T22:13:58Z"
+}
